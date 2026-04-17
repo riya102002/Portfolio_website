@@ -1,4 +1,4 @@
-import { Mail, Phone, Linkedin, Github, Send } from "lucide-react";
+import { Mail, Phone, Linkedin, Github } from "lucide-react";
 import { useReveal } from "@/hooks/use-reveal";
 import { SectionLabel } from "./About";
 
@@ -10,19 +10,6 @@ const GITHUB = "https://github.com/riya102002";
 export function Contact() {
   const ref = useReveal<HTMLDivElement>();
 
-  function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
-    e.preventDefault();
-    const form = new FormData(e.currentTarget);
-    const name = String(form.get("name") || "");
-    const email = String(form.get("email") || "");
-    const message = String(form.get("message") || "");
-    const subject = encodeURIComponent(`Portfolio inquiry from ${name}`);
-    const body = encodeURIComponent(
-      `${message}\n\n— ${name}\nReply-to: ${email}`,
-    );
-    window.location.href = `mailto:${EMAIL}?subject=${subject}&body=${body}`;
-  }
-
   return (
     <section id="contact" className="relative py-28">
       <div ref={ref} className="reveal mx-auto max-w-6xl px-4">
@@ -32,11 +19,11 @@ export function Contact() {
         </h2>
         <p className="mt-4 max-w-2xl text-muted-foreground">
           Open to Data Analyst roles, internships and meaningful collaborations.
-          Drop a message — I reply within 24 hours.
+          Reach out through any channel below — I reply within 24 hours.
         </p>
 
-        <div className="mt-12 grid gap-6 lg:grid-cols-5">
-          <div className="glass-card rounded-2xl p-6 lg:col-span-2">
+        <div className="mt-12 grid gap-6 lg:grid-cols-2">
+          <div className="glass-card rounded-2xl p-6">
             <div className="font-mono text-[10px] uppercase tracking-widest text-teal">
               ◉ command center
             </div>
@@ -46,39 +33,18 @@ export function Contact() {
               <ChannelRow icon={<Linkedin className="h-4 w-4" />} label="LinkedIn" value="in/riyakesharwani" href={LINKEDIN} />
               <ChannelRow icon={<Github className="h-4 w-4" />} label="GitHub" value="riya102002" href={GITHUB} />
             </ul>
-
-            <div className="mt-8 rounded-xl border border-white/10 bg-white/5 p-4">
-              <div className="font-mono text-[10px] uppercase tracking-widest text-violet">
-                location
-              </div>
-              <div className="mt-1 text-sm">Prayagraj, Uttar Pradesh, India</div>
-            </div>
           </div>
 
-          <form onSubmit={handleSubmit} className="glass-card rounded-2xl p-6 lg:col-span-3">
-            <div className="grid gap-4 sm:grid-cols-2">
-              <Field label="Name" name="name" required />
-              <Field label="Email" name="email" type="email" required />
+          <div className="glass-card rounded-2xl p-6">
+            <div className="font-mono text-[10px] uppercase tracking-widest text-violet">
+              location
             </div>
-            <div className="mt-4">
-              <label className="font-mono text-[10px] uppercase tracking-widest text-muted-foreground">
-                Message
-              </label>
-              <textarea
-                name="message"
-                required
-                rows={6}
-                className="mt-1.5 w-full resize-none rounded-xl border border-white/10 bg-white/5 px-3 py-2.5 text-sm text-foreground placeholder:text-muted-foreground/60 focus:border-teal/50 focus:outline-none focus:ring-2 focus:ring-teal/20"
-                placeholder="Tell me about the role, project, or idea…"
-              />
+            <div className="mt-1 text-sm">Prayagraj, Uttar Pradesh, India</div>
+            <div className="mt-6 font-mono text-[10px] uppercase tracking-widest text-violet">
+              availability
             </div>
-            <button
-              type="submit"
-              className="mt-5 inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-teal to-violet px-5 py-3 text-sm font-semibold text-background shadow-[0_0_30px_-6px_var(--teal)] transition-transform hover:scale-[1.02]"
-            >
-              <Send className="h-4 w-4" /> Send Message
-            </button>
-          </form>
+            <div className="mt-1 text-sm">Open to full-time Data Analyst roles & collaborations.</div>
+          </div>
         </div>
       </div>
 
