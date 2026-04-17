@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { ArrowRight, FileText, Mail } from "lucide-react";
 import { Particles } from "./Particles";
 import { LiveClock } from "./LiveClock";
+import portrait from "@/assets/riya-portrait.jpeg";
 
 const ROLES = [
   "Python Analyst",
