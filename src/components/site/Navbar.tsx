@@ -53,13 +53,6 @@ export function Navbar() {
             ))}
           </div>
 
-          <a
-            href="#contact"
-            className="hidden rounded-full border border-teal/40 bg-teal/10 px-4 py-1.5 text-sm font-medium text-teal transition-all hover:bg-teal/20 hover:shadow-[0_0_20px_-4px_var(--teal)] md:inline-flex"
-          >
-            Hire me
-          </a>
-
           <button
             aria-label="Open menu"
             onClick={() => setOpen((v) => !v)}
