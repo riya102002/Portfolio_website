@@ -10,7 +10,7 @@ const PUBS = [
     year: "2025",
     summary:
       "A multimodal architecture combining temporal metadata with NLP features to predict trending behavior of YouTube content.",
-    href: "https://www.linkedin.com/in/riyakesharwani/",
+    href: "https://ieeexplore.ieee.org/document/11383587",
   },
   {
     title: "Artificial Intelligence and the Linguistic Turn in Education",
@@ -18,7 +18,7 @@ const PUBS = [
     year: "2026",
     summary:
       "Explores how AI is reshaping language, cognition and pedagogy — and the implications for next-generation curricula.",
-    href: "https://www.linkedin.com/in/riyakesharwani/",
+    href: "https://www.igi-global.com/gateway/chapter/403452",
   },
 ];
 

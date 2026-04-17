@@ -25,7 +25,7 @@ const PROJECTS: Project[] = [
       "Helped a Fortune 500 client cut time-to-hire by 17%.",
     ],
     stack: ["Python", "SQL", "Power BI", "ETL"],
-    github: "https://github.com/riyakesharwani",
+    github: "https://github.com/riya102002/Global-job-market-intelligence-project",
     accent: "teal",
   },
   {
@@ -39,7 +39,7 @@ const PROJECTS: Project[] = [
       "Delivered insights to 20 stakeholders for data-informed decisions.",
     ],
     stack: ["SQL", "Power BI", "Python"],
-    github: "https://github.com/riyakesharwani",
+    github: "https://github.com/riya102002/Operation-Analytics-and-Investigating-Metric-Spike",
     accent: "violet",
   },
   {
@@ -53,7 +53,7 @@ const PROJECTS: Project[] = [
       "Output: marketing recommendations + an investor metrics deck.",
     ],
     stack: ["MySQL", "EDA", "Reporting"],
-    github: "https://github.com/riyakesharwani",
+    github: "https://github.com/riya102002/Instagram-User-Analytics",
     accent: "teal",
   },
   {
@@ -67,7 +67,7 @@ const PROJECTS: Project[] = [
       "Visual forecasts surface confidence intervals for operators.",
     ],
     stack: ["Python", "scikit-learn", "Pandas", "Matplotlib"],
-    github: "https://github.com/riyakesharwani",
+    github: "https://github.com/riya102002/Solar-Power-Output-Forecasting-Using-Ensemble-Learning",
     accent: "violet",
   },
   {
@@ -81,7 +81,7 @@ const PROJECTS: Project[] = [
       "Built around accessibility and trust as first-class principles.",
     ],
     stack: ["Java", "MySQL", "Web"],
-    github: "https://github.com/riyakesharwani",
+    github: "https://github.com/riya102002/PhilanthroLink",
     accent: "teal",
   },
 ];

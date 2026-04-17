@@ -8,6 +8,7 @@ type Cert = {
   issuer: string;
   year: string;
   skills: string[];
+  url: string;
 };
 
 const CERTS: Cert[] = [
@@ -16,48 +17,49 @@ const CERTS: Cert[] = [
     issuer: "Coursera",
     year: "2024",
     skills: ["SQL", "Querying", "Joins"],
+    url: "https://www.coursera.org/account/accomplishments/records/MIUW3467Y4L2",
   },
   {
     name: "NoSQL, Big Data & Spark Foundations Specialization",
     issuer: "IBM · Coursera",
     year: "2024",
     skills: ["NoSQL", "Spark", "Big Data"],
+    url: "https://www.coursera.org/account/accomplishments/specialization/POGTUGNMCBNZ",
   },
   {
     name: "Java Full Stack Developer",
-    issuer: "Wipro / NPTEL",
+    issuer: "Coursera",
     year: "2024",
     skills: ["Java", "Spring", "REST"],
+    url: "https://www.coursera.org/account/accomplishments/specialization/TIOI10AUQ8A4",
   },
   {
     name: "Deloitte Data Analytics Job Simulation",
     issuer: "Deloitte · Forage",
     year: "2024",
     skills: ["Tableau", "Forensics", "Insights"],
+    url: "https://drive.google.com/file/d/1T06k0-1XeQMIrz3arReuYWbawhp91j-Y/view?usp=sharing",
   },
   {
     name: "Business Analysis: Project & Stakeholder Management",
     issuer: "Coursera",
     year: "2024",
     skills: ["BA", "Stakeholders", "Process"],
+    url: "https://www.coursera.org/account/accomplishments/records/4RJXUPFRGROD",
   },
   {
     name: "Programming for Everybody – Python",
     issuer: "University of Michigan · Coursera",
     year: "2023",
     skills: ["Python", "Scripting"],
+    url: "https://www.coursera.org/account/accomplishments/records/53KBDK8BLB6W",
   },
   {
     name: "AWS Cloud Solution Architect",
-    issuer: "AWS",
+    issuer: "AWS · Coursera",
     year: "2024",
     skills: ["AWS", "Cloud", "Architecture"],
-  },
-  {
-    name: "Business Analysis: Process Modeling",
-    issuer: "Coursera",
-    year: "2024",
-    skills: ["BPMN", "Modeling"],
+    url: "https://coursera.org/verify/professional-cert/3L0AQS5MHDJH",
   },
 ];
 
@@ -89,7 +91,7 @@ function CertCard({ c }: { c: Cert }) {
         ))}
       </div>
       <a
-        href="https://www.linkedin.com/in/riyakesharwani/"
+        href={c.url}
         target="_blank"
         rel="noopener noreferrer"
         className="mt-4 inline-flex items-center gap-1.5 text-xs font-medium text-teal hover:underline"

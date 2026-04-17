@@ -3,9 +3,9 @@ import { useReveal } from "@/hooks/use-reveal";
 import { SectionLabel } from "./About";
 
 const EMAIL = "riya10.work@gmail.com";
-const PHONE = "+91-798-555-4502";
+const PHONE = "+91-7985554502";
 const LINKEDIN = "https://www.linkedin.com/in/riyakesharwani/";
-const GITHUB = "https://github.com/riyakesharwani";
+const GITHUB = "https://github.com/riya102002";
 
 export function Contact() {
   const ref = useReveal<HTMLDivElement>();
@@ -44,7 +44,7 @@ export function Contact() {
               <ChannelRow icon={<Mail className="h-4 w-4" />} label="Email" value={EMAIL} href={`mailto:${EMAIL}`} />
               <ChannelRow icon={<Phone className="h-4 w-4" />} label="Phone" value={PHONE} href={`tel:${PHONE.replace(/[^+\d]/g, "")}`} />
               <ChannelRow icon={<Linkedin className="h-4 w-4" />} label="LinkedIn" value="in/riyakesharwani" href={LINKEDIN} />
-              <ChannelRow icon={<Github className="h-4 w-4" />} label="GitHub" value="riyakesharwani" href={GITHUB} />
+              <ChannelRow icon={<Github className="h-4 w-4" />} label="GitHub" value="riya102002" href={GITHUB} />
             </ul>
 
             <div className="mt-8 rounded-xl border border-white/10 bg-white/5 p-4">

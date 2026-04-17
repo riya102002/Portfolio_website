@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { ArrowRight, FileText, Mail } from "lucide-react";
+import { ArrowRight, FileText, Mail, Linkedin } from "lucide-react";
 import { Particles } from "./Particles";
 import { LiveClock } from "./LiveClock";
 import portrait from "@/assets/riya-portrait.jpeg";
@@ -121,12 +121,20 @@ export function Hero() {
             <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
           </a>
           <a
-            href="/RiyaResume.pdf"
+            href="https://drive.google.com/file/d/1CK99EqSN-vB2gH8xFUX2wHtfYPrgkCfD/view?usp=sharing"
             target="_blank"
-            rel="noopener"
+            rel="noopener noreferrer"
             className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-5 py-3 text-sm font-medium text-foreground transition-all hover:border-teal/40 hover:bg-teal/10"
           >
             <FileText className="h-4 w-4" /> View Resume
+          </a>
+          <a
+            href="https://www.linkedin.com/in/riyakesharwani/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-5 py-3 text-sm font-medium text-foreground transition-all hover:border-teal/40 hover:bg-teal/10"
+          >
+            <Linkedin className="h-4 w-4" /> View LinkedIn
           </a>
           <a
             href="#contact"
