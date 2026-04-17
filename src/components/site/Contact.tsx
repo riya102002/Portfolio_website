@@ -93,28 +93,3 @@ function ChannelRow({
   );
 }
 
-function Field({
-  label,
-  name,
-  type = "text",
-  required,
-}: {
-  label: string;
-  name: string;
-  type?: string;
-  required?: boolean;
-}) {
-  return (
-    <div>
-      <label className="font-mono text-[10px] uppercase tracking-widest text-muted-foreground">
-        {label}
-      </label>
-      <input
-        name={name}
-        type={type}
-        required={required}
-        className="mt-1.5 w-full rounded-xl border border-white/10 bg-white/5 px-3 py-2.5 text-sm text-foreground placeholder:text-muted-foreground/60 focus:border-teal/50 focus:outline-none focus:ring-2 focus:ring-teal/20"
-      />
-    </div>
-  );
-}
