@@ -84,9 +84,7 @@ export function Hero() {
 
         <p className="mt-6 max-w-2xl text-sm leading-relaxed text-muted-foreground sm:text-base">
           Transforming raw data into business intelligence, strategy, and measurable
-          growth through analytics and visualization. Published IEEE researcher with
-          a track record of cutting time-to-hire by 17% and improving process
-          efficiency by 40%.
+          growth through analytics and visualization.
         </p>
 
         <div className="mt-8 flex flex-wrap gap-3">
@@ -113,33 +111,7 @@ export function Hero() {
           </a>
         </div>
 
-        <HeroStats />
       </div>
     </section>
-  );
-}
-
-import { Counter } from "./Counter";
-
-function HeroStats() {
-  const stats = [
-    { v: 50000, s: "+", label: "Data points analyzed" },
-    { v: 40, s: "%", label: "Wrangling time cut" },
-    { v: 17, s: "%", label: "Time-to-hire reduction" },
-    { v: 5, s: "M+", label: "Job postings/month" },
-  ];
-  return (
-    <div className="mt-12 grid grid-cols-2 gap-3 sm:grid-cols-4">
-      {stats.map((s) => (
-        <div key={s.label} className="glass-card rounded-2xl p-4">
-          <div className="font-display text-2xl font-bold text-gradient sm:text-3xl">
-            <Counter to={s.v} suffix={s.s} />
-          </div>
-          <div className="mt-1 text-[11px] uppercase tracking-wider text-muted-foreground sm:text-xs">
-            {s.label}
-          </div>
-        </div>
-      ))}
-    </div>
   );
 }
