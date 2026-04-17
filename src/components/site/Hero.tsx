@@ -68,11 +68,35 @@ export function Hero() {
           <LiveClock />
         </div>
 
-        <h1 className="font-display text-4xl font-bold leading-[1.05] sm:text-6xl md:text-7xl">
-          Riya
-          <br />
-          <span className="text-gradient">Kesharwani.</span>
-        </h1>
+        <div className="flex items-center gap-5 sm:gap-7">
+          <div className="relative shrink-0">
+            <div
+              aria-hidden
+              className="absolute -inset-2 rounded-full opacity-80 blur-xl"
+              style={{ background: "var(--gradient-primary)" }}
+            />
+            <div
+              aria-hidden
+              className="absolute -inset-[2px] rounded-full"
+              style={{ background: "var(--gradient-primary)" }}
+            />
+            <img
+              src={portrait}
+              alt="Portrait of Riya Kesharwani, Data Analyst"
+              loading="eager"
+              className="relative h-20 w-20 rounded-full object-cover ring-1 ring-white/10 shadow-[0_0_40px_-8px_var(--teal)] sm:h-28 sm:w-28 md:h-32 md:w-32"
+            />
+            <span
+              aria-hidden
+              className="absolute bottom-1 right-1 h-3 w-3 rounded-full bg-teal shadow-[0_0_10px_var(--teal)] ring-2 ring-background"
+            />
+          </div>
+          <h1 className="font-display text-4xl font-bold leading-[1.05] sm:text-6xl md:text-7xl">
+            Riya
+            <br />
+            <span className="text-gradient">Kesharwani.</span>
+          </h1>
+        </div>
 
         <p className="mt-5 max-w-2xl text-base text-muted-foreground sm:text-lg">
           Data Analyst <span className="text-foreground">·</span> Insight Builder{" "}
