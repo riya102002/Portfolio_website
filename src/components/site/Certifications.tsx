@@ -109,7 +109,7 @@ export function Certifications() {
   return (
     <section id="certifications" className="relative py-28">
       <div className="mx-auto max-w-6xl px-4">
-        <SectionLabel>05 / Certifications</SectionLabel>
+        <SectionLabel>06 / Certifications</SectionLabel>
         <h2 className="mt-3 font-display text-3xl font-bold sm:text-5xl">
           The <span className="text-gradient">credential vault</span>.
         </h2>

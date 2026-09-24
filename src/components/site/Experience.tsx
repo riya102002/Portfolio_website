@@ -3,24 +3,25 @@ import { SectionLabel } from "./About";
 
 const ROLES = [
   {
-    role: "Data Analytics Trainee",
-    org: "Trainity",
-    period: "Jul 2025 – Dec 2025",
-    location: "Remote, India",
+    role: "Strategic Intelligence & Data Visualization Associate",
+    org: "Agneta Strategic Insights",
+    period: "Sep 2026 – Present",
+    location: "Gurugram",
     bullets: [
-      "Analyzed 50,000+ data points using Python & Excel — driving 15% YoY process efficiency.",
-      "Engineered SQL automations improving data accuracy by 18% and saving 6 hours/week.",
-      "Optimized a Pandas pipeline merging 5+ data sources weekly, cutting wrangling time by 40%.",
+      "Build interactive web dashboards that turn complex intelligence into clear stakeholder views.",
+      "Integrate APIs and analytical data sources into reliable, decision-ready reporting workflows.",
+      "Develop predictive models and data visualizations that support strategic business decisions.",
     ],
   },
   {
-    role: "Marketing Executive",
-    org: "Integral World",
-    period: "Jul 2024 – Sep 2024",
-    location: "Auroville",
+    role: "Data Analytics Trainee",
+    org: "Trainity",
+    period: "Jul 2025 – Sep 2025",
+    location: "India",
     bullets: [
-      "Owned campaign analytics and reporting for outreach initiatives.",
-      "Connected creative ideation with measurable performance metrics.",
+      "Developed SQL and Python pipelines to analyze customer behavior and identify key churn drivers, improving retention modeling by 15%.",
+      "Automated weekly Excel and Power BI reporting, reducing manual work by 10+ hours per week.",
+      "Conducted deep-dive EDA on large datasets and presented market findings that influenced product roadmap priorities.",
     ],
   },
   {
@@ -33,37 +34,19 @@ const ROLES = [
       "Built dashboards translating social signals into brand decisions.",
     ],
   },
-  {
-    role: "Content Writer",
-    org: "Uniford Foundation",
-    period: "Jan 2024 – Mar 2024",
-    location: "Remote",
-    bullets: [
-      "Crafted research-driven editorial content for educational initiatives.",
-    ],
-  },
-  {
-    role: "Curriculum Writer",
-    org: "Team Everest NGO",
-    period: "Jul 2023 – Aug 2023",
-    location: "Remote",
-    bullets: [
-      "Designed structured learning modules used in volunteer-led programs.",
-    ],
-  },
 ];
 
 export function Experience() {
   return (
     <section id="experience" className="relative py-28">
       <div className="mx-auto max-w-6xl px-4">
-        <SectionLabel>06 / Experience</SectionLabel>
+        <SectionLabel>07 / Experience</SectionLabel>
         <h2 className="mt-3 font-display text-3xl font-bold sm:text-5xl">
           The <span className="text-gradient">trajectory</span>.
         </h2>
         <p className="mt-4 max-w-2xl text-muted-foreground">
-          Roles spanning analytics, marketing and writing — every step adding
-          context to how data drives decisions.
+          Roles spanning strategic intelligence, analytics, and marketing —
+          each sharpening how data becomes a business decision.
         </p>
 
         <div className="relative mt-14">

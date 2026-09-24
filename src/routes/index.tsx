@@ -5,6 +5,7 @@ import { About } from "@/components/site/About";
 import { Skills } from "@/components/site/Skills";
 import { Projects } from "@/components/site/Projects";
 import { Publications } from "@/components/site/Publications";
+import { Awards } from "@/components/site/Awards";
 import { Certifications } from "@/components/site/Certifications";
 import { Experience } from "@/components/site/Experience";
 import { Contact } from "@/components/site/Contact";
@@ -14,18 +15,20 @@ import { ScrollProgress } from "@/components/site/ScrollProgress";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Riya Kesharwani — Data Analyst | Insight Builder" },
+      { title: "Riya Kesharwani — Strategic Intelligence & Data Visualization" },
       {
         name: "description",
         content:
-          "Portfolio of Riya Kesharwani — Data Analyst skilled in Python, SQL, Power BI and Tableau. Published IEEE researcher turning data into business decisions.",
+          "Portfolio of Riya Kesharwani — Strategic Intelligence and Data Visualization Associate specializing in analytics, predictive modeling, Python, SQL, Power BI and Tableau.",
       },
-      { property: "og:title", content: "Riya Kesharwani — Data Analyst Portfolio" },
+      { property: "og:title", content: "Riya Kesharwani — Strategic Intelligence Portfolio" },
       {
         property: "og:description",
         content:
-          "Dark-themed analytics portfolio: projects, research, certifications and experience.",
+          "Analytics, predictive modeling, data visualization, research, projects, awards and professional experience.",
       },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
   }),
   component: Index,
@@ -43,6 +46,7 @@ function Index() {
         <Skills />
         <Projects />
         <Publications />
+        <Awards />
         <Certifications />
         <Experience />
         <Contact />
