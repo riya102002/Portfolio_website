@@ -20,6 +20,15 @@ const PUBS = [
       "Explores how AI is reshaping language, cognition and pedagogy — and the implications for next-generation curricula.",
     href: "https://www.igi-global.com/gateway/chapter/403452",
   },
+  {
+    title:
+      "Enhanced Solar Power Output Forecasting using Ensemble Learning with Weather-Integrated Data Fusion",
+    type: "IEEE Research Paper · Applied Machine Learning",
+    year: "2026",
+    summary:
+      "A weather-integrated stacking ensemble combining XGBoost, LightGBM, CatBoost and SVR, achieving 95.17% R² with 0.59 ms/sample inference for real-time renewable energy decisions.",
+    href: "https://ieeexplore.ieee.org/document/11542165",
+  },
 ];
 
 export function Publications() {
@@ -31,7 +40,8 @@ export function Publications() {
           The <span className="text-gradient">research vault</span>.
         </h2>
         <p className="mt-4 max-w-2xl text-muted-foreground">
-          Published work spanning multimodal AI and the future of education.
+          Published work spanning multimodal AI, renewable energy forecasting,
+          and the future of education.
         </p>
 
         <div className="mt-12 grid gap-5 md:grid-cols-2">

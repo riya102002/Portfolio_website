@@ -5,11 +5,11 @@ import { LiveClock } from "./LiveClock";
 import portrait from "@/assets/riya-portrait.jpeg";
 
 const ROLES = [
-  "Python Analyst",
-  "SQL Specialist",
-  "Dashboard Creator",
+  "Strategic Intelligence Analyst",
+  "Data Visualization Specialist",
+  "Predictive Modeling Researcher",
   "Research Author",
-  "BI Enthusiast",
+  "Business Intelligence Builder",
 ];
 
 function Typer() {
@@ -63,7 +63,7 @@ export function Hero() {
         <div className="mb-6 flex items-center justify-between">
           <div className="glass inline-flex items-center gap-2 rounded-full px-3 py-1 text-xs">
             <span className="h-1.5 w-1.5 rounded-full bg-teal shadow-[0_0_8px_var(--teal)]" />
-            <span className="text-muted-foreground">Available for Data Analyst roles</span>
+            <span className="text-muted-foreground">Available to join immediately</span>
           </div>
           <LiveClock />
         </div>
@@ -99,8 +99,8 @@ export function Hero() {
         </div>
 
         <p className="mt-5 max-w-2xl text-base text-muted-foreground sm:text-lg">
-          Data Analyst <span className="text-foreground">·</span> Insight Builder{" "}
-          <span className="text-foreground">·</span> Problem Solver
+          Strategic Intelligence <span className="text-foreground">·</span> Data Visualization{" "}
+          <span className="text-foreground">·</span> Business Intelligence
         </p>
 
         <div className="mt-2 h-7 text-lg sm:text-xl">
@@ -108,8 +108,8 @@ export function Hero() {
         </div>
 
         <p className="mt-6 max-w-2xl text-sm leading-relaxed text-muted-foreground sm:text-base">
-          Transforming raw data into business intelligence, strategy, and measurable
-          growth through analytics and visualization.
+          I build pipelines, dashboards, and predictive models that turn messy data
+          into decisions teams can act on.
         </p>
 
         <div className="mt-8 flex flex-wrap gap-3">

@@ -13,13 +13,13 @@ export function Contact() {
   return (
     <section id="contact" className="relative py-28">
       <div ref={ref} className="reveal mx-auto max-w-6xl px-4">
-        <SectionLabel>07 / Contact</SectionLabel>
+        <SectionLabel>08 / Contact</SectionLabel>
         <h2 className="mt-3 font-display text-3xl font-bold sm:text-5xl">
           Let's turn data into <span className="text-gradient">decisions</span>.
         </h2>
         <p className="mt-4 max-w-2xl text-muted-foreground">
-          Open to Data Analyst roles, internships and meaningful collaborations.
-          Reach out through any channel below — I reply within 24 hours.
+          Open to Data Analyst and Analytics roles across Hyderabad, Bangalore,
+          Delhi, Pune, Gurgaon, and remote opportunities.
         </p>
 
         <div className="mt-12 grid gap-6 lg:grid-cols-2">
@@ -39,11 +39,11 @@ export function Contact() {
             <div className="font-mono text-[10px] uppercase tracking-widest text-violet">
               location
             </div>
-            <div className="mt-1 text-sm">Prayagraj, Uttar Pradesh, India</div>
+            <div className="mt-1 text-sm">Allahabad, Uttar Pradesh, India</div>
             <div className="mt-6 font-mono text-[10px] uppercase tracking-widest text-violet">
               availability
             </div>
-            <div className="mt-1 text-sm">Open to full-time Data Analyst roles & collaborations.</div>
+            <div className="mt-1 text-sm">Available to join immediately.</div>
           </div>
         </div>
       </div>

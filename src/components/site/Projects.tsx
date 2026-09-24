@@ -15,6 +15,20 @@ type Project = {
 
 const PROJECTS: Project[] = [
   {
+    title: "Win/Loss Pattern Miner",
+    period: "2026",
+    blurb:
+      "AI-assisted sales intelligence pipeline turning unstructured CRM notes into statistically validated win/loss patterns.",
+    details: [
+      "Integrated HubSpot APIs with Gemini to classify deal notes and write structured reason tags back to the CRM.",
+      "Validated competitor, industry and deal-size patterns using lift-based cross-tabulation across 100 synthetic deals.",
+      "Produced a five-report HubSpot dashboard and leadership-ready intelligence report connecting loss reasons to revenue impact.",
+    ],
+    stack: ["Python", "HubSpot API", "Gemini", "Pandas"],
+    github: "https://github.com/riya102002/winloss-pattern-miner",
+    accent: "teal",
+  },
+  {
     title: "Global Data Job Market Analysis",
     period: "Jan 2026 – Mar 2026",
     blurb:
@@ -26,7 +40,7 @@ const PROJECTS: Project[] = [
     ],
     stack: ["Python", "SQL", "Power BI", "ETL"],
     github: "https://github.com/riya102002/Global-job-market-intelligence-project",
-    accent: "teal",
+    accent: "violet",
   },
   {
     title: "Operational Analytics & Metric Spikes",
@@ -40,7 +54,7 @@ const PROJECTS: Project[] = [
     ],
     stack: ["SQL", "Power BI", "Python"],
     github: "https://github.com/riya102002/Operation-Analytics-and-Investigating-Metric-Spike",
-    accent: "violet",
+    accent: "teal",
   },
   {
     title: "Instagram User Analytics",
@@ -54,7 +68,7 @@ const PROJECTS: Project[] = [
     ],
     stack: ["MySQL", "EDA", "Reporting"],
     github: "https://github.com/riya102002/Instagram-User-Analytics",
-    accent: "teal",
+    accent: "violet",
   },
   {
     title: "Solar Panel Forecasting — Hybrid Model",
@@ -62,13 +76,13 @@ const PROJECTS: Project[] = [
     blurb:
       "Hybrid time-series + ML model forecasting solar panel output under varying weather.",
     details: [
-      "Combined statistical baselines with ML regressors for higher accuracy.",
-      "Feature engineering across irradiance, temperature and seasonality.",
-      "Visual forecasts surface confidence intervals for operators.",
+      "Fused historical generation records with real-time weather variables for grid-aware forecasting.",
+      "Stacked XGBoost, LightGBM, CatBoost and SVR under a Gradient Boosting meta-learner.",
+      "Achieved 95.17% R² with 0.59 ms/sample inference latency for real-time use.",
     ],
-    stack: ["Python", "scikit-learn", "Pandas", "Matplotlib"],
+    stack: ["Python", "XGBoost", "LightGBM", "CatBoost"],
     github: "https://github.com/riya102002/Solar-Power-Output-Forecasting-Using-Ensemble-Learning",
-    accent: "violet",
+    accent: "teal",
   },
   {
     title: "PhilanthroLink",
@@ -82,7 +96,7 @@ const PROJECTS: Project[] = [
     ],
     stack: ["Java", "MySQL", "Web"],
     github: "https://github.com/riya102002/PhilanthroLink",
-    accent: "teal",
+    accent: "violet",
   },
 ];
 

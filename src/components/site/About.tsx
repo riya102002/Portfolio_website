@@ -14,17 +14,17 @@ const TIMELINE = [
   {
     year: "2025",
     title: "Published IEEE researcher",
-    body: "Co-authored a multimodal temporal modeling paper at IC2SDT 2025 and a book chapter on AI in education with IGI Global.",
+    body: "Co-authored research in multimodal trend modeling and solar forecasting, alongside an IGI Global chapter on AI in education.",
   },
   {
-    year: "2025–26",
+    year: "2025",
     title: "Data Analytics Trainee @ Trainity",
-    body: "Built pipelines processing 50,000+ data points; improved process efficiency 15% YoY and cut wrangling time by 40%.",
+    body: "Built SQL and Python pipelines to identify churn drivers, improving retention modeling by 15% and saving 10+ reporting hours each week.",
   },
   {
-    year: "Now",
-    title: "Ready to contribute",
-    body: "Final-year student building production-grade analytical projects — and looking for a Data Analyst role.",
+    year: "2026",
+    title: "Strategic Intelligence @ AgnetaSI",
+    body: "Building web dashboards, integrating APIs, and translating predictive models into clear, decision-ready visual intelligence.",
   },
 ];
 
@@ -38,8 +38,8 @@ export function About() {
           A storyline written in <span className="text-gradient">data</span>.
         </h2>
         <p className="mt-4 max-w-2xl text-muted-foreground">
-          A final-year Computer Science student who fell in love with the moment a
-          messy CSV becomes a decision. Here's how the journey unfolded.
+          A Computer Science graduate who turns complex analysis into clear,
+          stakeholder-ready decisions. Here's how the journey unfolded.
         </p>
 
         <div className="relative mt-14">
