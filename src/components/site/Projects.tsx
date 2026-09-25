@@ -2,6 +2,12 @@ import { useState } from "react";
 import { ChevronDown, Github, ExternalLink } from "lucide-react";
 import { useReveal } from "@/hooks/use-reveal";
 import { SectionLabel } from "./About";
+import jobMarketImage from "@/assets/project-job-market.jpg";
+import operationalAnalyticsImage from "@/assets/project-operational-analytics.jpg";
+import instagramAnalyticsImage from "@/assets/project-instagram-analytics.jpg";
+import winLossImage from "@/assets/project-win-loss.jpg";
+import solarForecastingImage from "@/assets/project-solar-forecasting.jpg";
+import philanthroLinkImage from "@/assets/project-philanthrolink.jpg";
 
 type Project = {
   title: string;
@@ -10,6 +16,8 @@ type Project = {
   details: string[];
   stack: string[];
   github?: string;
+  image: string;
+  imageAlt: string;
   accent: "teal" | "violet";
 };
 
@@ -26,6 +34,8 @@ const PROJECTS: Project[] = [
     ],
     stack: ["Python", "SQL", "Power BI", "ETL"],
     github: "https://github.com/riya102002/Global-job-market-intelligence-project",
+    image: jobMarketImage,
+    imageAlt: "Global job-market data network mapped across continents",
     accent: "violet",
   },
   {
@@ -40,6 +50,8 @@ const PROJECTS: Project[] = [
     ],
     stack: ["SQL", "Power BI", "Python"],
     github: "https://github.com/riya102002/Operation-Analytics-and-Investigating-Metric-Spike",
+    image: operationalAnalyticsImage,
+    imageAlt: "Operational analytics display highlighting anomalous metric spikes",
     accent: "teal",
   },
   {
@@ -54,6 +66,8 @@ const PROJECTS: Project[] = [
     ],
     stack: ["MySQL", "EDA", "Reporting"],
     github: "https://github.com/riya102002/Instagram-User-Analytics",
+    image: instagramAnalyticsImage,
+    imageAlt: "Social audience clusters and engagement paths visualized as a network",
     accent: "violet",
   },
   {
@@ -68,6 +82,8 @@ const PROJECTS: Project[] = [
     ],
     stack: ["Python", "HubSpot API", "Gemini", "Pandas"],
     github: "https://github.com/riya102002/winloss-pattern-miner",
+    image: winLossImage,
+    imageAlt: "Sales intelligence decision tree branching into win and loss patterns",
     accent: "teal",
   },
   {
@@ -82,6 +98,8 @@ const PROJECTS: Project[] = [
     ],
     stack: ["Python", "XGBoost", "LightGBM", "CatBoost"],
     github: "https://github.com/riya102002/Solar-Power-Output-Forecasting-Using-Ensemble-Learning",
+    image: solarForecastingImage,
+    imageAlt: "Solar panels beneath weather and energy forecasting visualizations",
     accent: "teal",
   },
   {
@@ -96,6 +114,8 @@ const PROJECTS: Project[] = [
     ],
     stack: ["Java", "MySQL", "Web"],
     github: "https://github.com/riya102002/PhilanthroLink",
+    image: philanthroLinkImage,
+    imageAlt: "Global philanthropy network connecting communities and impact initiatives",
     accent: "violet",
   },
 ];
@@ -109,14 +129,34 @@ function ProjectCard({ p, index }: { p: Project; index: number }) {
   return (
     <div
       ref={ref}
-      className="reveal glass-card group relative overflow-hidden rounded-2xl p-6 transition-all hover:-translate-y-1 hover:border-white/20"
+      className="reveal glass-card group relative overflow-hidden rounded-2xl transition-all hover:-translate-y-1 hover:border-white/20"
     >
       <div
         aria-hidden
         className={`pointer-events-none absolute -right-20 -top-20 h-56 w-56 rounded-full bg-gradient-to-br ${accentBg} to-transparent opacity-60 blur-3xl transition-opacity group-hover:opacity-100`}
       />
 
-      <div className="relative">
+      <div className="relative aspect-[3/2] overflow-hidden border-b border-glass-border bg-muted">
+        <img
+          src={p.image}
+          alt={p.imageAlt}
+          width={1536}
+          height={1024}
+          loading="lazy"
+          className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.04]"
+        />
+        <div
+          aria-hidden
+          className="absolute inset-0 bg-gradient-to-t from-background/65 via-transparent to-transparent"
+        />
+        <span
+          className={`absolute bottom-3 left-3 rounded-full border border-glass-border bg-background/75 px-2.5 py-1 font-mono text-[9px] uppercase backdrop-blur-md ${accentText}`}
+        >
+          Project {String(index + 1).padStart(2, "0")}
+        </span>
+      </div>
+
+      <div className="relative p-6">
         <div className="flex items-center justify-between">
           <span className={`font-mono text-[10px] uppercase tracking-widest ${accentText}`}>
             {String(index + 1).padStart(2, "0")} · {p.period}
