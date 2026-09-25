@@ -15,20 +15,6 @@ type Project = {
 
 const PROJECTS: Project[] = [
   {
-    title: "Win/Loss Pattern Miner",
-    period: "2026",
-    blurb:
-      "AI-assisted sales intelligence pipeline turning unstructured CRM notes into statistically validated win/loss patterns.",
-    details: [
-      "Integrated HubSpot APIs with Gemini to classify deal notes and write structured reason tags back to the CRM.",
-      "Validated competitor, industry and deal-size patterns using lift-based cross-tabulation across 100 synthetic deals.",
-      "Produced a five-report HubSpot dashboard and leadership-ready intelligence report connecting loss reasons to revenue impact.",
-    ],
-    stack: ["Python", "HubSpot API", "Gemini", "Pandas"],
-    github: "https://github.com/riya102002/winloss-pattern-miner",
-    accent: "teal",
-  },
-  {
     title: "Global Data Job Market Analysis",
     period: "Jan 2026 – Mar 2026",
     blurb:
@@ -69,6 +55,20 @@ const PROJECTS: Project[] = [
     stack: ["MySQL", "EDA", "Reporting"],
     github: "https://github.com/riya102002/Instagram-User-Analytics",
     accent: "violet",
+  },
+  {
+    title: "Win/Loss Pattern Miner",
+    period: "2026",
+    blurb:
+      "AI-assisted sales intelligence pipeline turning unstructured CRM notes into statistically validated win/loss patterns.",
+    details: [
+      "Integrated HubSpot APIs with Gemini to classify deal notes and write structured reason tags back to the CRM.",
+      "Validated competitor, industry and deal-size patterns using lift-based cross-tabulation across 100 synthetic deals.",
+      "Produced a five-report HubSpot dashboard and leadership-ready intelligence report connecting loss reasons to revenue impact.",
+    ],
+    stack: ["Python", "HubSpot API", "Gemini", "Pandas"],
+    github: "https://github.com/riya102002/winloss-pattern-miner",
+    accent: "teal",
   },
   {
     title: "Solar Panel Forecasting — Hybrid Model",

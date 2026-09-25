@@ -5,4 +5,4 @@
 - [x] Add the third publication
 - [x] Update experience with Agneta, Trainity, and Thotin
 - [x] Add IEEE Research Excellence Award section and navigation
-- [ ] Update metadata and validate desktop/mobile flows and links
+- [x] Update metadata and validate desktop/mobile flows and links
