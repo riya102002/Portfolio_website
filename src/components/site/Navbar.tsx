@@ -64,7 +64,7 @@ export function Navbar() {
         </nav>
 
         {open && (
-          <div className="glass-card mt-2 rounded-2xl p-3 md:hidden">
+          <div className="mt-2 rounded-2xl border border-glass-border bg-background/95 p-3 shadow-2xl backdrop-blur-xl md:hidden">
             <div className="flex flex-col">
               {links.map((l) => (
                 <a
